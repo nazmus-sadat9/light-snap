@@ -10,7 +10,7 @@ The unique part is type safety and no compilation.
 
 # Installation
 ```
-npm i 
+npm i light-kitjs 
 ```
 
 ```
