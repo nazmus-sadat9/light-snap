@@ -43,7 +43,6 @@ const box = make("div", {
 });
 ```
 
-```
 ## Installation
 ```
 npm i light-kitjs
