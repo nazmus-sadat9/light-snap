@@ -22,6 +22,9 @@ export function random(type: RandomType ,min: number, max: number): number {
     case "floor": // floor random value
       return Math.random() * (max - min) + min;
       break;
+
+    default:
+      throw new TypeError(`Invalid type: '${type}'. Expected 'int' or 'floor'.`);
   }
 }
 
