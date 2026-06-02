@@ -16,7 +16,7 @@ export function event(
   }
   else{
     // if the element not found
-    console.warn(`light-kitjs: Element not found for event ${type}`);
+    console.warn(`lightingjs: Element not found for event ${type}`);
   }
 
 }

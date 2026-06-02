@@ -1,4 +1,4 @@
-type RandomType = "int" | "floor";
+type RandomType = "int" | "float";
 type EventTargetEl = string | Element | null;
 type EventCallback = (ev: Event) => void;
 type ElementAttributes = Record<string, string | number | boolean>;
@@ -23,14 +23,14 @@ callback: EventCallback): void;
 declare function make<K extends keyof HTMLElementTagNameMap>(tagName: K, options?: MakeOptions): HTMLElementTagNameMap[K];
 
 declare global {
-    function _(selector: string): HTMLElement | null;
-    function $(selector: string): HTMLElement | null;
+    function query(selector: string): HTMLElement | null;
+    function id(selector: string): HTMLElement | null;
 }
-declare const _: (selector: string) => HTMLElement | null;
-declare const $: (selector: string) => HTMLElement | null;
+declare const query: (selector: string) => HTMLElement | null;
+declare const id: (selector: string) => HTMLElement | null;
 
 declare const lightMath: {
     randNum: typeof random;
 };
 
-export { $, type ElementAttributes, type EventCallback, type EventTargetEl, type MakeOptions, type RandomType, _, event, lightMath, make, math as mathfunc };
+export { type ElementAttributes, type EventCallback, type EventTargetEl, type MakeOptions, type RandomType, event, id, lightMath, make, math as mathfunc, query };

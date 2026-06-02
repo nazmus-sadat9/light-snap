@@ -49,10 +49,10 @@ document.body.appendChild(box); // add in body
 ```
 // Selectors are built in functions 
 // query selector 
-_(".box");
+query(".box");
 
 // id selector
-$("box");
+id("box");
 ```
 
 ## Installation

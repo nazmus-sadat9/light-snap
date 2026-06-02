@@ -20,11 +20,11 @@ function random(type, min, max) {
     case "int":
       return Math.floor(Math.random() * (max - min + 1)) + min;
       break;
-    case "floor":
+    case "float":
       return Math.random() * (max - min) + min;
       break;
     default:
-      throw new TypeError(`Invalid type: '${type}'. Expected 'int' or 'floor'.`);
+      throw new TypeError(`Invalid type: '${type}'. Expected 'int' or 'float'.`);
   }
 }
 
@@ -34,7 +34,7 @@ function event(element, type, callback) {
   if (target) {
     target.addEventListener(type, callback);
   } else {
-    console.warn(`light-kitjs: Element not found for event ${type}`);
+    console.warn(`lightingjs: Element not found for event ${type}`);
   }
 }
 
@@ -51,24 +51,24 @@ function make(tagName, options = {}) {
 }
 
 // src/index.ts
-var _ = (selector) => {
+var query = (selector) => {
   return document.querySelector(selector);
 };
-var $ = (selector) => {
+var id = (selector) => {
   return document.getElementById(selector);
 };
-if (typeof window !== void 0) {
-  window._ = _;
-  window.$ = $;
+if (typeof window !== "undefined") {
+  window.query = query;
+  window.id = id;
 }
 var lightMath = {
   randNum: random
 };
 export {
-  $,
-  _,
   event,
+  id,
   lightMath,
   make,
-  math_exports as mathfunc
+  math_exports as mathfunc,
+  query
 };

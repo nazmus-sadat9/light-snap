@@ -1,25 +1,25 @@
 // global functions 
 declare global {
-  function _(selector: string): HTMLElement | null;
+  function query(selector: string): HTMLElement | null;
   //function _all(selector: string);
-  function $(selector: string): HTMLElement | null;
+  function id(selector: string): HTMLElement | null;
 }
 
 // describe the global functions
 // Query Selector
-export const _ = (selector: string): HTMLElement | null => {
+export const query = (selector: string): HTMLElement | null => {
   return document.querySelector(selector);
 };
 
 // Id Selector
-export const $ = (selector: string): HTMLElement | null => {
+export const id = (selector: string): HTMLElement | null => {
   return document.getElementById(selector);
 };
 
 // use for browser and frontend 
-if (typeof window !== undefined){
-  (window as any)._ = _;
-  (window as any).$ = $;
+if (typeof window !== "undefined"){
+  (window as any).query = query;
+  (window as any).id = id;
 }
 
 

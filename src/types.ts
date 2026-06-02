@@ -1,5 +1,5 @@
 // MATH_TYPES
-export type RandomType = "int" | "floor";
+export type RandomType = "int" | "float";
 
 // EVENT_TYPES
 export type EventTargetEl = string | Element | null;
