@@ -29,17 +29,17 @@ function random(type, min, max) {
 }
 
 // src/events.ts
-function event(element, type, callback) {
+function makeEvent(element, type, callback) {
   const target = typeof element === "string" ? document.querySelector(element) : element;
   if (target) {
     target.addEventListener(type, callback);
   } else {
-    console.warn(`lightingjs: Element not found for event ${type}`);
+    console.error(`lightingjs: Element not found for event ${type}`);
   }
 }
 
 // src/make.ts
-function make(tagName, options = {}) {
+function makeTag(tagName, options = {}) {
   const element = document.createElement(tagName);
   if (options.classes && options.classes.length > 0) {
     element.classList.add(...options.classes.filter(Boolean));
@@ -65,10 +65,10 @@ var lightMath = {
   randNum: random
 };
 export {
-  event,
   id,
   lightMath,
-  make,
+  makeEvent,
+  makeTag,
   math_exports as mathfunc,
   query
 };

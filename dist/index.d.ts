@@ -16,11 +16,11 @@ declare namespace math {
   export { math_random as random };
 }
 
-declare function event(element: EventTargetEl, // html target element
+declare function makeEvent(element: EventTargetEl, // html target element
 type: string, // event type
 callback: EventCallback): void;
 
-declare function make<K extends keyof HTMLElementTagNameMap>(tagName: K, options?: MakeOptions): HTMLElementTagNameMap[K];
+declare function makeTag<K extends keyof HTMLElementTagNameMap>(tagName: K, options?: MakeOptions): HTMLElementTagNameMap[K];
 
 declare global {
     function query(selector: string): HTMLElement | null;
@@ -33,4 +33,4 @@ declare const lightMath: {
     randNum: typeof random;
 };
 
-export { type ElementAttributes, type EventCallback, type EventTargetEl, type MakeOptions, type RandomType, event, id, lightMath, make, math as mathfunc, query };
+export { type ElementAttributes, type EventCallback, type EventTargetEl, type MakeOptions, type RandomType, id, lightMath, makeEvent, makeTag, math as mathfunc, query };

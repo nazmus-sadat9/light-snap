@@ -1,6 +1,6 @@
 {
   "name": "lightingjs",
-  "version": "0.2.7",
+  "version": "0.3.7",
   "description": "This is a JavaScript library that makes coding easier.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nazmus-sadat9/light-speedjs.git"
+    "url": "git+https://github.com/nazmus-sadat9/lightingjs.git"
   },
   "keywords": [
     "lighting",
@@ -24,9 +24,9 @@
   "author": "Nazmus Sadat",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nazmus-sadat9/light-speedjs/issues"
+    "url": "https://github.com/nazmus-sadat9/lightingjs/issues"
   },
-  "homepage": "https://github.com/nazmus-sadat9/light-speedjs#readme",
+  "homepage": "https://github.com/nazmus-sadat9/lightingjs#readme",
   "devDependencies": {
     "tsup": "^8.5.1",
     "typescript": "^6.0.3"

@@ -23,11 +23,11 @@ if (typeof window !== "undefined"){
 }
 
 
-// ES modules
+// modules
 import * as mathfunc from "./math";
 export * from "./types";
-export { event } from "./events";
-export { make } from "./make";
+export { makeEvent } from "./events";
+export { makeTag } from "./make";
 
 
 export { mathfunc };

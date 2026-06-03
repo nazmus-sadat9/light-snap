@@ -20,10 +20,10 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
-  event: () => event,
   id: () => id,
   lightMath: () => lightMath,
-  make: () => make,
+  makeEvent: () => makeEvent,
+  makeTag: () => makeTag,
   mathfunc: () => math_exports,
   query: () => query
 });
@@ -54,17 +54,17 @@ function random(type, min, max) {
 }
 
 // src/events.ts
-function event(element, type, callback) {
+function makeEvent(element, type, callback) {
   const target = typeof element === "string" ? document.querySelector(element) : element;
   if (target) {
     target.addEventListener(type, callback);
   } else {
-    console.warn(`lightingjs: Element not found for event ${type}`);
+    console.error(`lightingjs: Element not found for event ${type}`);
   }
 }
 
 // src/make.ts
-function make(tagName, options = {}) {
+function makeTag(tagName, options = {}) {
   const element = document.createElement(tagName);
   if (options.classes && options.classes.length > 0) {
     element.classList.add(...options.classes.filter(Boolean));
@@ -91,10 +91,10 @@ var lightMath = {
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  event,
   id,
   lightMath,
-  make,
+  makeEvent,
+  makeTag,
   mathfunc,
   query
 });

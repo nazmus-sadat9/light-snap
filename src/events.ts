@@ -1,7 +1,7 @@
 import { EventTargetEl, EventCallback } from "./types";
 
 // event function 
-export function event(
+export function makeEvent(
   element: EventTargetEl, // html target element
   type: string, // event type
   callback: EventCallback // callback function
@@ -16,7 +16,7 @@ export function event(
   }
   else{
     // if the element not found
-    console.warn(`lightingjs: Element not found for event ${type}`);
+    console.error(`lightingjs: Element not found for event ${type}`);
   }
 
 }

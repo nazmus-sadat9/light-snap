@@ -1,7 +1,7 @@
 import { MakeOptions } from "./types";
 
 // make function 
-export function make<K extends keyof HTMLElementTagNameMap>(
+export function makeTag<K extends keyof HTMLElementTagNameMap>(
   tagName: K,
   options: MakeOptions = {}
 ):HTMLElementTagNameMap[K]{
