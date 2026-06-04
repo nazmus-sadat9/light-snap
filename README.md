@@ -10,7 +10,7 @@ The unique part is type safety, easier and no compilation.
 4. Selectors
 
 ## randNum utility
-```
+```JavaScript
 import { light } from "lightingjs"; // ES Module
 const { light } = require("lightingjs"); // CommonJS
 
@@ -21,7 +21,7 @@ console.log(num);
 ```
 
 ## makeEvent function
-```
+```JavaScript
 // the arguments are element, event type, callback
 makeEvent("#button", "click", () => {
   console.log("clicked!");
@@ -29,7 +29,7 @@ makeEvent("#button", "click", () => {
 ```
 
 ## makeTag function
-```
+```JavaScript
 // this function is easier Version of 'document.createElement()'
 const box = makeTag("div", {
   text: "hello world", // inner text
@@ -40,7 +40,7 @@ document.body.appendChild(box); // add in body
 ```
 
 ## Selectors
-```
+```JavaScript
 // query selector 
 query(".box");
 
@@ -49,7 +49,7 @@ id("box");
 ```
 
 ## copy utility
-``` 
+```JavaScript
 import { light } from "lightingjs"; // ES Module
 const { light } = require("lightingjs"); // CommonJS
 
@@ -71,10 +71,10 @@ npm i lightingjs
 ```
 
 ## CDNs 
-```
+```html
 <script src="https://unpkg.com/lightingjs"></script> 
 
-// or 
+<!-- or --> 
 
 <script src="https://cdn.jsdelivr.net/npm/lightingjs"></script>
 ```
