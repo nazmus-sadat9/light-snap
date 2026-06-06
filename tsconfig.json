@@ -10,7 +10,7 @@
     "declaration": true,
     "noEmit": false,
     "outDir": "dist",
-    "types": ["node"],
+    "types": [],
     "ignoreDeprecations": "6.0"
   },
   "include": ["src"],

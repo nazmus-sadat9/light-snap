@@ -16,7 +16,7 @@ export function makeEvent(
   }
   else{
     // if the element not found
-    console.error(`lightingjs: Element not found for event ${type}`);
+    console.error(`efficiency: Element not found for event ${type}`);
   }
 
 }

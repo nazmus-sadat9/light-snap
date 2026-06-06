@@ -1,4 +1,4 @@
-# lighting.js
+# efficiency.js
 This is a JavaScript library that makes coding easier and it made by TypeScript. This is also a frontend library. The JavaScript function are very simple at there.
 
 ## Features
@@ -11,11 +11,11 @@ The unique part is type safety, easier and no compilation.
 
 ## randNum utility
 ```JavaScript
-import { lighting } from "lightingjs"; // ES Module
-const { lighting } = require("lightingjs"); // CommonJS
+import { efficiency } from "efficiency"; // ES Module
+const { efficiency } = require("efficiency"); // CommonJS
 
 // the arguments are type, minimum and maximum number.
-const num = lighting.randNum("int", 1, 15);
+const num = efficiency.randNum("int", 1, 15);
 
 console.log(num);
 ```
@@ -50,8 +50,8 @@ id("box");
 
 ## copy utility
 ```JavaScript
-import { lighting } from "lightingjs"; // ES Module
-const { lighting } = require("lightingjs"); // CommonJS
+import { efficiency } from "efficiency"; // ES Module
+const { efficiency } = require("efficiency"); // CommonJS
 
 // make a button tag 
 const btn = makeTag("button", {
@@ -60,32 +60,22 @@ const btn = makeTag("button", {
 
 makeEvent(btn, "click", async () => {
 
-  const result = await lighting.copy("hello world"); // return true or false
+  const result = await efficiency.copy("hello world"); // return true or false
 
 });
 ```
 
 ## Installation
 ```
-npm i lightingjs
+npm i efficiency
 ```
 
 ## CDNs 
 ```html
-<script src="https://unpkg.com/lightingjs"></script> 
+<script src="https://unpkg.com/efficiency"></script> 
 
 <!-- or --> 
 
-<script src="https://cdn.jsdelivr.net/npm/lightingjs"></script>
-```
-
-## Update
-```
-lightingjs --update 
-```
-
-## Version
-```
-lightingjs --version
+<script src="https://cdn.jsdelivr.net/npm/efficiency"></script>
 ```
 
