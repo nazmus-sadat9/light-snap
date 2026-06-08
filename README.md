@@ -1,21 +1,19 @@
-# efficiency.js
+# quick-snap.js
 This is a JavaScript library that makes coding easier and it made by TypeScript. This is also a frontend library. The JavaScript function are very simple at there.
 
 ## Features
-The unique part is type safety, easier and no compilation.
-
-1. Math functions 
+1. snap utilities 
 2. makeEvent function
 3. makeTag function
 4. Selectors
 
 ## randNum utility
 ```JavaScript
-import { efficiency } from "efficiency"; // ES Module
-const { efficiency } = require("efficiency"); // CommonJS
+import { snap } from "quick-snap"; // ES Module
+const { snap } = require("quick-snap"); // CommonJS
 
 // the arguments are type, minimum and maximum number.
-const num = efficiency.randNum("int", 1, 15);
+const num = snap.randNum("int", 1, 15);
 
 console.log(num);
 ```
@@ -30,10 +28,10 @@ makeEvent("#button", "click", () => {
 
 ## makeTag function
 ```JavaScript
-// this function is easier Version of 'document.createElement()'
+// the arguments are html tag name and object 
 const box = makeTag("div", {
   text: "hello world", // inner text
-  classes: ["box"] // add multiple class name
+  classes: ["box"] // class names 
 });
 
 document.body.appendChild(box); // add in body
@@ -50,32 +48,37 @@ id("box");
 
 ## copy utility
 ```JavaScript
-import { efficiency } from "efficiency"; // ES Module
-const { efficiency } = require("efficiency"); // CommonJS
+import { snap } from "quick-snap"; // ES Module
+const { snap } = require("quick-snap"); // CommonJS
 
 // make a button tag 
 const btn = makeTag("button", {
   text: "copy"
 });
 
+// async function
 makeEvent(btn, "click", async () => {
 
-  const result = await efficiency.copy("hello world"); // return true or false
+  const result = await snap.copy("hello world"); // return true or false
 
 });
 ```
 
 ## Installation
 ```
-npm i efficiency
+npm install quick-snap
 ```
 
 ## CDNs 
 ```html
-<script src="https://unpkg.com/efficiency"></script> 
+<script src="https://unpkg.com/quick-snap"></script> 
 
 <!-- or --> 
 
-<script src="https://cdn.jsdelivr.net/npm/efficiency"></script>
+<script src="https://cdn.jsdelivr.net/npm/quick-snap"></script>
 ```
 
+## Update
+```
+npm install quick-snap
+```
