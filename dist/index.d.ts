@@ -19,7 +19,7 @@ callback: EventCallback): void;
 
 declare function makeTag<K extends keyof HTMLElementTagNameMap>(tagName: K, options?: MakeOptions): HTMLElementTagNameMap[K];
 
-declare const efficiency: {
+declare const snap: {
     randNum: typeof randNum;
     copy: typeof copy;
 };
@@ -28,11 +28,11 @@ declare global {
     function id(selector: string): HTMLElement | null;
     function makeTag<K extends keyof HTMLElementTagNameMap>(tagName: K, options?: any): HTMLElementTagNameMap[K];
     function makeEvent(element: any, type: string, callback: any): void;
-    const efficiency: {
+    const snap: {
         randNum: (type: "int" | "float", min: number, max: number) => number;
     };
 }
 declare const query: (selector: string) => HTMLElement | null;
 declare const id: (selector: string) => HTMLElement | null;
 
-export { type ElementAttributes, type EventCallback, type EventTargetEl, type MakeOptions, type RandomType, efficiency, id, makeEvent, makeTag, query };
+export { type ElementAttributes, type EventCallback, type EventTargetEl, type MakeOptions, type RandomType, id, makeEvent, makeTag, query, snap };

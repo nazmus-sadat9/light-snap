@@ -1,6 +1,6 @@
 {
-  "name": "quick-snap",
-  "version": "0.5.0",
+  "name": "light-snap",
+  "version": "0.5.1",
   "description": "A JavaScript library that makes coding easier.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nazmus-sadat9/quick-snap.git"
+    "url": "git+https://github.com/nazmus-sadat9/light-snap.git"
   },
   "keywords": [
     "snap",
@@ -26,9 +26,9 @@
   "author": "Nazmus Sadat",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nazmus-sadat9/quick-snap/issues"
+    "url": "https://github.com/nazmus-sadat9/light-snap/issues"
   },
-  "homepage": "https://github.com/nazmus-sadat9/quick-snap#readme",
+  "homepage": "https://github.com/nazmus-sadat9/light-snap#readme",
   "devDependencies": {
     "tsup": "^8.5.1",
     "typescript": "^6.0.3"

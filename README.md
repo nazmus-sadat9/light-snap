@@ -1,4 +1,4 @@
-# quick-snap.js
+# light-snap.js
 This is a JavaScript library that makes coding easier and it made by TypeScript. This is also a frontend library. The JavaScript function are very simple at there.
 
 ## Features
@@ -9,8 +9,8 @@ This is a JavaScript library that makes coding easier and it made by TypeScript.
 
 ## randNum utility
 ```JavaScript
-import { snap } from "quick-snap"; // ES Module
-const { snap } = require("quick-snap"); // CommonJS
+import { snap } from "light-snap"; // ES Module
+const { snap } = require("light-snap"); // CommonJS
 
 // the arguments are type, minimum and maximum number.
 const num = snap.randNum("int", 1, 15);
@@ -48,8 +48,8 @@ id("box");
 
 ## copy utility
 ```JavaScript
-import { snap } from "quick-snap"; // ES Module
-const { snap } = require("quick-snap"); // CommonJS
+import { snap } from "light-snap"; // ES Module
+const { snap } = require("light-snap"); // CommonJS
 
 // make a button tag 
 const btn = makeTag("button", {
@@ -66,19 +66,19 @@ makeEvent(btn, "click", async () => {
 
 ## Installation
 ```
-npm install quick-snap
+npm install light-snap
 ```
 
 ## CDNs 
 ```html
-<script src="https://unpkg.com/quick-snap"></script> 
+<script src="https://unpkg.com/light-snap"></script> 
 
 <!-- or --> 
 
-<script src="https://cdn.jsdelivr.net/npm/quick-snap"></script>
+<script src="https://cdn.jsdelivr.net/npm/light-snap"></script>
 ```
 
 ## Update
 ```
-npm install quick-snap
+npm install light-snap
 ```
